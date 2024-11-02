@@ -87,7 +87,7 @@ This is the main script that sets up agents and tasks, retrieves API keys, and r
 Lists the dependencies for the project.
 
 3. .env
-4. 
+
 This file stores sensitive information, such as API keys. 
 
 ### Example
@@ -116,3 +116,8 @@ The output should detail each agent’s findings and recommendations for the sel
 - Dependency Issues: Double-check requirements.txt to ensure all libraries are installed.
 
 - Agent Initialization Errors: Confirm all agents are initialized with necessary tools, as defined in app.py.
+
+### RESULT
+
+![Multi-Agent Workflow for Financial Analysis Result](./results.png)
+
