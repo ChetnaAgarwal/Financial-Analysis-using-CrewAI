@@ -2,6 +2,46 @@
 
 This project implements a multi-agent collaboration system for financial analysis and trading strategy development using the crewai and crewai_tools libraries. The agents perform various tasks, such as market data analysis, trading strategy development, trade execution planning, and risk assessment. By integrating openai and serper API keys, the project automates insights gathering and strategy formulation for selected stocks.
 
+1. Purpose: Automates financial analysis and trading strategy creation with multi-agent collaboration using CrewAI.
+
+2. API Setup: Retrieves OpenAI and Serper API keys from environment variables to facilitate analysis and information retrieval.
+
+3. Agents:
+
+- Data Analyst Agent: Analyzes market data in real-time to identify trends.
+
+- Trading Strategy Developer Agent: Develops trading strategies based on data insights.
+
+- Trade Advisor Agent: Suggests optimal methods and timing for trade execution.
+
+- Risk Advisor Agent: Evaluates trade risks and suggests mitigation strategies.
+
+4. Tasks:
+
+- Data Analysis Task: Monitors stock data and generates insights.
+
+- Strategy Development Task: Creates risk-aligned trading strategies.
+
+- Execution Planning Task: Recommends detailed trade execution plans.
+
+- Risk Assessment Task: Provides comprehensive risk analysis reports.
+
+5. Hierarchical Workflow:
+
+- Structure: The agents work in a hierarchical, dependency-based order managed by CrewAI.
+
+- Task Flow: Outputs from one agent inform the tasks of subsequent agents, ensuring an organized flow where each agent’s output is leveraged by the next.
+
+- Manager LLM: A language model (ChatOpenAI) oversees the hierarchical workflow, coordinating agent interactions and decision-making.
+
+6. Execution:
+
+- Crew Initialization: Creates a Crew of agents and assigns tasks in a hierarchical order.
+
+- Input Parameters: Accepts stock selection, initial capital, risk tolerance, and trading preferences.
+
+- Run Process: Triggers the crew process to output actionable financial insights and strategies in an organized, collaborative manner.
+
 
 
 ### Project Structure
