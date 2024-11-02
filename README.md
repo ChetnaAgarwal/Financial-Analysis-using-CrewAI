@@ -7,10 +7,15 @@ This project implements a multi-agent collaboration system for financial analysi
 ### Project Structure
 
 financial_analysis_using_CrewAI/
+
 ├── app.py                 # Main application code
+
 ├── requirements.txt       # Project dependencies
+
 ├── .env                   # Environment variables (store API keys here)
+
 ├── README.md              # Project documentation
+
 ├── results                # snapshot of results obtained for an example stock
 
 ### Features
